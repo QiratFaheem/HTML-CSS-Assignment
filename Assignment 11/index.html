@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLogs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f5fc;
+            margin: 20px;
+            padding: 0;
+        }
+        .blog-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .blog-post {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .blog-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0288d1;
+        }
+        .blog-content {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #0288d1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .read-more:hover {
+            background-color: #026ba1;
+        }
+        .blog-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 900px) {
+            .blog-post {
+                max-width: 45%;
+            }
+        }
+        @media (max-width: 600px) {
+            .blog-post {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>E-Commerce Website BLogs</h1>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="image1.png " width="300" height="350" alt="e-commerce" class="blog-image">
+            <div class="blog-title">AMAZON</div>
+            <div class="blog-content">
+                Amazon is a global e-commerce and technology giant, known for revolutionizing online shopping. Eco-friendly services and best quality</div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="image2.png" width="300" height="350" alt="e-commerce" class="blog-image">
+            <div class="blog-title">SHOPIFY</div>
+            <div class="blog-content">
+                Shopify is a leading e-commerce platform that empowers businesses of all sizes to create and manage their online stores.Best Quality </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="image.png" width="300" height="350" alt="e-commerce" class="blog-image">
+            <div class="blog-title">ALIBABA</div>
+            <div class="blog-content">
+                Alibaba is a leading global e-commerce platform that connects businesses and consumers, facilitating trade through its online marketplaces like Alibaba.com</div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
